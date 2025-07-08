@@ -1,0 +1,99 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .section h2 {
+            margin-top: 0;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .price {
+            color: #555;
+        }
+
+        /* Adicionando um pouco de estilo para tornar mais bonito */
+        @media (max-width: 600px) {
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .price {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cardápio de Sushi</h1>
+    <div class="container">
+        <div class="section" id="sushis">
+            <h2>Sushis</h2>
+            <div class="item">
+                <div class="name">Salmon Nigiri</div>
+                <div class="price">R$ 12,00</div>
+            </div>
+            <div class="item">
+                <div class="name">California Roll</div>
+                <div class="price">R$ 15,00</div>
+            </div>
+            <div class="item">
+                <div class="name">Tempura Uramaki</div>
+                <div class="price">R$ 18,00</div>
+            </div>
+        </div>
+        <div class="section" id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="item">
+                <div class="name">Sake</div>
+                <div class="price">R$ 20,00</div>
+            </div>
+            <div class="item">
+                <div class="name">Soda</div>
+                <div class="price">R$ 5,00</div>
+            </div>
+            <div class="item">
+                <div class="name">Água Mineral</div>
+                <div class="price">R$ 4,00</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

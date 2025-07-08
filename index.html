@@ -1,0 +1,94 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 10px;
+        }
+
+        .cardapio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 200px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        .item h3 {
+            margin-top: 0;
+            color: #ff6347;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cardápio de Sushi</h1>
+
+    <div class="section">
+        <h2>Sushis</h2>
+        <div class="cardapio">
+            <div class="item">
+                <h3>Salmon Nigiri</h3>
+                <div class="price">R$ 12,00</div>
+            </div>
+            <div class="item">
+                <h3>California Roll</h3>
+                <div class="price">R$ 15,00</div>
+            </div>
+            <div class="item">
+                <h3>Tempura Uramaki</h3>
+                <div class="price">R$ 18,00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Bebidas</h2>
+        <div class="cardapio">
+            <div class="item">
+                <h3>Sake</h3>
+                <div class="price">R$ 20,00</div>
+            </div>
+            <div class="item">
+                <h3>Soda</h3>
+                <div class="price">R$ 5,00</div>
+            </div>
+            <div class="item">
+                <h3>Água Mineral</h3>
+                <div class="price">R$ 4,00</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
